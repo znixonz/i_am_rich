@@ -1,7 +1,17 @@
 import 'package:flutter/material.dart';
 
 void main() => runApp(MaterialApp(
-      home: Center(
-        child: Text("Hello world"),
+        home: Scaffold(
+      backgroundColor: Colors.blueGrey,
+      appBar: AppBar(
+        title: Center(
+          child: Text("i am rich"),
+        ),
+        backgroundColor: Colors.blueGrey[900],
       ),
-    ));
+      body: Center(
+        child: Image(
+          image: AssetImage('images/diamond.png'),
+        ),
+      ),
+    )));
